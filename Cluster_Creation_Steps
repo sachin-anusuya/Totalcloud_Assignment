@@ -1,0 +1,18 @@
+Steps To pull image from dockerhub:
+
+docker pull sachindockerhub/my-nodeapp:latest
+
+Next in order To create a pod and deploy the application:
+
+kubectl run Demo-app --image=sachindockerhub/my-nodeapp --replicas=2 --port=8080
+
+In  order to check whether the pods are up and  running: kubectl get po
+
+After deployment has been created command in order to expose is :
+kubectl expose deployment Demo-app
+
+To check whether it is successful or not : kubectl get svc
+
+To check application is running properly use the command : curl http://giveclusteripaddress:8080 (port number that is specified)
+
+Then we get hostname: application name 
