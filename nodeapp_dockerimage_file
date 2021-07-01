@@ -1,0 +1,16 @@
+ADD file ... in /
+CMD ["bash"]
+/bin/sh -c apt-get update &&
+/bin/sh -c set -ex; if
+/bin/sh -c apt-get update &&
+/bin/sh -c set -ex; apt-get
+/bin/sh -c groupadd --gid 1000
+/bin/sh -c set -ex
+ENV NPM_CONFIG_LOGLEVEL=info
+ENV NODE_VERSION=7.10.1
+/bin/sh -c ARCH= && dpkgArch="$(dpkg
+ENV YARN_VERSION=0.24.4
+/bin/sh -c set -ex
+CMD ["node"]
+ADD file ... in /app.js
+ENTRYPOINT ["node" "app.js"]
